@@ -45,7 +45,7 @@ for i in range(minNum, maxNum+1):
         if medianLoc == 0:
             median = i
             break
-    
+
 mean = allSum / N
 maxRange = maxNum - minNum
 
