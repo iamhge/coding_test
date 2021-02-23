@@ -3,6 +3,8 @@
 <참고>
   #390 백준 파이썬 [1654] 랜선 자르기 - 이분탐색
    : https://claude-u.tistory.com/443
+  백준 1654번(python)
+   : https://hwiyong.tistory.com/384?category=844316
 <틀린 이유>
   1. 런타임 에러 (NameError)
   2. 런타임 에러 (ZeroDivisionError)
@@ -20,6 +22,7 @@ for _ in range(K):
 # ex) 1 3 / 5 입력시 ZeroDivisionError 발생
 start = 1 
 end = max(LAN)
+result = 0
 
 while start <= end:
     cnt = 0
@@ -34,12 +37,12 @@ while start <= end:
     # ex) 2 4 / 24 / 38 -> 답) 12
     # cnt == N이어도 최대 길이가 나오지 않을 수 있으므로 계속 돌림.
     if cnt >= N:
+        result = mid
         start = mid + 1
     else:
         end = mid - 1
 
-# print(mid) 하면, mid가 start <= end 확인 이후 정해지므로 틀릴 수 있음.
-print(end)
+print(result)
 
 # 틀린 코드
 # 너무 복잡하고 이상하게 생각함.
