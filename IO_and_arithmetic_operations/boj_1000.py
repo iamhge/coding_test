@@ -1,3 +1,4 @@
+# A+B, A-B, A×B, A/B, 사칙 연산
 # 1000, 1001, 10998, 1008, 10869 번
 # a_b = input().split(' ')
 # print(int(a_b[0]) * int(a_b[1]))
