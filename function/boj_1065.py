@@ -1,3 +1,4 @@
+# 한수
 import sys
 
 # 한수 여부 return
