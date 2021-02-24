@@ -1,3 +1,4 @@
+# 사분면 고르기
 x = int(input())
 y = int(input())
 
