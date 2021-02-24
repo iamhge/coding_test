@@ -1,3 +1,4 @@
+# 직각삼각형
 import sys
 
 while True:
