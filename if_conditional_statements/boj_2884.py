@@ -1,3 +1,4 @@
+# 알람 시계
 H, M = map(int, input().split())
 
 # 내 코드
