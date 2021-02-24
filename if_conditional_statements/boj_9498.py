@@ -1,3 +1,4 @@
+# 시험 성적
 score = int(input())
 
 # if 90 <= score <= 100:
