@@ -1,3 +1,4 @@
+# 소수
 import sys
 import math
 
