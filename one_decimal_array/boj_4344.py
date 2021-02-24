@@ -1,3 +1,4 @@
+# 평균은 넘겠지
 import sys
 
 C = int(sys.stdin.readline().rstrip())
