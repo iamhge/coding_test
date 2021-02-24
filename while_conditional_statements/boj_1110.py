@@ -1,3 +1,4 @@
+# 더하기 사이클
 import sys
 
 i = 0
