@@ -1,3 +1,4 @@
+# 골드바흐의 추측
 import sys
 
 def isPrimeNumber(num: int) -> bool:
