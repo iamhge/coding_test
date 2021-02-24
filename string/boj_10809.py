@@ -1,3 +1,4 @@
+# 알파벳 찾기
 import sys
 
 string = list(sys.stdin.readline().rstrip())
