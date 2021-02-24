@@ -1,3 +1,4 @@
+# 설탕 배달
 import sys
 
 N = int(sys.stdin.readline().rstrip())
