@@ -1,5 +1,6 @@
+# 그룹 단어 체커
 import sys
-'''
+
 def isGroupWord(S: str) -> bool:
     count = {}
     for i in range(len(S)):
@@ -20,7 +21,7 @@ for i in range(N):
         result += 1
 
 print(result)
-'''
+
 # 다른 사람 코드 1 (집합 이용)
 '''
 import sys
