@@ -1,3 +1,4 @@
+# 하노이 탑 이동 순서
 import sys
 
 def hanoi(n: int, start:int, temp:int, end:int):
