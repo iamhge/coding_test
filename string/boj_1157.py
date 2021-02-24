@@ -1,3 +1,4 @@
+# 단어 공부
 import sys
 
 S = sys.stdin.readline().rstrip()
