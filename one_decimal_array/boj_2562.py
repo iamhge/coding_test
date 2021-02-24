@@ -1,3 +1,4 @@
+# 최댓값
 import sys
 
 N = []
