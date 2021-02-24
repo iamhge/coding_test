@@ -1,3 +1,4 @@
+# 문자열 반복
 import sys
 
 T = int(sys.stdin.readline().rstrip())
