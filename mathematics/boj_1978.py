@@ -1,3 +1,4 @@
+# 소수 찾기
 import sys
 import math
 
