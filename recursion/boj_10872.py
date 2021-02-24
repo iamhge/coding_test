@@ -1,3 +1,4 @@
+# 팩토리얼
 import sys
 
 def factorial(N: int):
