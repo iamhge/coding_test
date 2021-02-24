@@ -1,4 +1,4 @@
-# 내 코드
+# 별 찍기 - 10
 import sys
 
 def getCanvas(N: int):
@@ -27,5 +27,3 @@ for i in range(N):
     for j in range(N):
         print(canvas[i][j], end="")
     print("")
-
-# 다른 사람 코드
