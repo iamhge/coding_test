@@ -1,3 +1,4 @@
+# 셀프 넘버
 def d(n: int) -> int:
     strN = str(n)
     result = n
