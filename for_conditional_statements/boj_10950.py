@@ -1,4 +1,4 @@
-# A+B-3
+# A+B - 3
 T = int(input())
 A = []
 
