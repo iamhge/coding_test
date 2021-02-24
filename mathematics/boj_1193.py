@@ -1,4 +1,4 @@
-# 분수 찾기
+# 분수찾기
 import sys
 
 X = int(sys.stdin.readline().rstrip())
