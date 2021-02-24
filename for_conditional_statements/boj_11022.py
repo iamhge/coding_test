@@ -1,3 +1,4 @@
+# A+B - 8
 import sys
 T = int(sys.stdin.readline().rstrip())
 
