@@ -1,3 +1,4 @@
+# A+B - 4
 import sys
 while 1:
     try: # 실행할 코드
