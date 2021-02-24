@@ -1,3 +1,4 @@
+# 상수
 import sys
 '''
 A, B = map(str, sys.stdin.readline().split())
