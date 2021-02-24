@@ -1,3 +1,4 @@
+# 베르트랑 공준
 import sys
 
 def getPrimeNumber(M: int, N: int):
