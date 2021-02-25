@@ -1,0 +1,6 @@
+/* 오랜 기간 보호한 동물(2) */
+SELECT O.ANIMAL_ID, O.NAME
+FROM ANIMAL_OUTS AS O
+JOIN ANIMAL_INS AS I ON O.ANIMAL_ID = I.ANIMAL_ID
+ORDER BY O.DATETIME - I.DATETIME DESC -- 입양을 간 동물 중, 보호기간이 가장 길었던 동물
+LIMIT 2 -- 두 마리
