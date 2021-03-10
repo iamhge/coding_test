@@ -10,7 +10,7 @@
     -> 집합으로 바꿨으나 또 시간초과
     -> 돌다가 이미 팀을 이룬 학생을 고른 경우 break처리
     -> 그래도 시간초과
-    -> 별 난리를 쳐도 다 시간초과 -> 포기
+    -> 별 난리를 쳐도 다 시간초과. 구글링 해도 나랑 비슷한데 왜 난 시간초과 인지 모르겠음.. -> 포기
 '''
 import sys
 from collections import deque
@@ -26,10 +26,6 @@ def DFS(S: list, root: int, cycle: set, visited: list):
 
         visited.append(n)
         picked.append(n)
-
-        if n == S[n]: # 혼자 팀을 꾸릴 때
-            cycle.add(n)
-            break
 
         if S[n] not in picked:
             stack.append(S[n])
