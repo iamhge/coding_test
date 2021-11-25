@@ -21,7 +21,6 @@ ex2)
 2 4
 3 4
 '''
-import heapq
 import sys
 
 input = sys.stdin.readline
@@ -29,12 +28,6 @@ INF = int(1e9)
 
 N, M = map(int, input().split())
 graph = [[INF] * (N+1) for _ in range(N+1)]
-
-def printGraph():
-    for i in range(N+1):
-        print(graph[i])
-    print()
-
 
 for _ in range(M):
     a, b = map(int, input().split())
