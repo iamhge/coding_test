@@ -3,7 +3,7 @@
 ## 1. 언어
 |알고리즘|SQL|WEB|
 |------|---|---|
-|Python3|MariaDB|HTML/CSS, javascript| 
+|Python3|SQL|HTML/CSS, javascript| 
 * 알고리즘은 root 디렉토리 하위에 위치한다. 각 문제들에 사용된 알고리즘 혹은 분류를 디렉토리 명으로 설정하였다.
 * SQL과 WEB의 경우, SQL, WEB이라는 디렉토리 하위에 각각 위치한다. 그 안에서 각 문제들에 사용된 분류 등을 디렉토리 명으로 설정하였다.
 
