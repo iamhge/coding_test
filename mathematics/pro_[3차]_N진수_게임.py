@@ -1,4 +1,4 @@
-# N진수 게임
+# [3차] N진수 게임
 nums = [str(i) for i in range(10)]
 nums.extend([chr(65+i) for i in range(6)])
 
