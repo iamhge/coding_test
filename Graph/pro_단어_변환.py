@@ -4,6 +4,37 @@
   1) if 한글자만 변경이 가능하면 -> queue에 넣는다.
   2) if target이면 -> result 업데이트.
 '''
+# 다른 사람 코드를 보고 수정한 코드
+from collections import deque
+
+def isDifferentOneChar(a, b):
+    diff = 0
+
+    for i in range(0, len(a)):
+        if a[i] == b[i]: continue
+        diff += 1
+    if diff == 1: return True
+
+    return False
+
+def solution(begin, target, words):
+    visited = {begin: 0}
+    queue = deque([begin])
+    
+    while queue:
+        now = queue.popleft()
+        
+        for word in words:
+            if isDifferentOneChar(word, now) and word not in visited:
+                visited[word] = visited[now] + 1
+                queue.append(word)
+                
+    if target in visited:
+        return visited[target]
+    return 0
+
+# 기존 코드
+'''
 from collections import deque
 
 def isDifferentOneChar(a, b):
@@ -33,7 +64,7 @@ def solution(begin, target, words):
     
     if answer > len(words): return 0
     return answer
-
+'''
 # 다른 사람 풀이
 '''
 <아이디어>
