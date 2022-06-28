@@ -1,9 +1,47 @@
 # 합승 택시 요금
 '''
 <풀이 방법>
+  Floyd-Warshall (플로이드 워셜) 알고리즘
+'''
+INF = 100001*200*3
+
+def FloydWarshall(n, dist, nodes):
+    for now in range(1, n+1):
+        for peer1 in range(1, n+1):
+            for peer2 in range(1, n+1):
+                if dist[peer1][now] + dist[now][peer2] < dist[peer1][peer2]:
+                    dist[peer1][peer2] = dist[peer1][now] + dist[now][peer2]
+                    dist[peer2][peer1] = dist[peer1][now] + dist[now][peer2]
+    return dist
+
+def solution(n, s, a, b, fares):
+    answer = INF
+    nodes = {i: [] for i in range(1, n+1)}
+    dist = [[INF] * (n+1) for _ in range(n+1)]
+    
+    for i in range(1, n+1):
+        dist[i][i] = 0
+    
+    for fare in fares: 
+        nodes[fare[0]].append(fare[1])
+        nodes[fare[1]].append(fare[0])
+        dist[fare[0]][fare[1]] = fare[2]
+        dist[fare[1]][fare[0]] = fare[2]
+    
+    dist = FloydWarshall(n, dist, nodes)
+    
+    for i in range(1, n+1):
+        answer = min(dist[s][i] + dist[i][a] + dist[i][b], answer)
+    
+    return answer
+
+# 통과 코드
+'''
+<풀이 방법>
   - 다익스트라 최소 경로 알고리즘 사용
     1) s, a, b 각각에서 다른 모든 노드까지 최소 경로를 구한다.
     2) s-> 환승지 + 환승지 -> a + 환승지 -> b가 최소인 환승지를 구한다.
+'''
 '''
 import heapq
 
@@ -42,7 +80,7 @@ def solution(n, s, a, b, fares):
         answer = min(answer, sp[i] + ap[i] + bp[i])
     
     return answer
-
+'''
 # 틀린 코드
 '''
 <틀린 이유>
