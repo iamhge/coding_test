@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-class Solution {
+class pro_42862 {
     public int solution(int n, int[] lost, int[] reserve) {
         int answer = n;
         // 뒷번호 친구 검사해야하므로 (n+1) + 1
