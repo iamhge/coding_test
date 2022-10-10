@@ -13,11 +13,12 @@
   [Java] 배열의 여러가지 선언 및 초기화 방법
   : https://coding-factory.tistory.com/253
 */
+package previous_test.kakao.kakao_tech_internship_2022;
 
 import java.util.HashMap;
 import java.util.Map;
 
-class Solution {
+class pro_118666 {
     public static Map<Character, Integer> elem = new HashMap<>();
     public static int n;
     public static char[] type = {'R', 'T', 'C', 'F', 'J', 'M', 'A', 'N'};

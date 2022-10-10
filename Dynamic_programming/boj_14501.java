@@ -4,7 +4,7 @@
   - DFS
   - 해당 날짜에 하거나 안하거나를 기준으로 DFS 했다.
 * */
-package Simulation;
+package Dynamic_programming;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
